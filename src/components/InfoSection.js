@@ -3,9 +3,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function InfoSection() {
   return (
-    <Container fluid className="bg-dark text-white py-5" id="info">
+    <Container fluid className="text-white py-5" id="info" style={{ backgroundColor: '#1a1a1a' }}>
       <Container>
-        <Row className="background">
+        <Row>
           <Col md={4}>
             <h4>Event Time</h4>
             <p>October 31, 2025, 7:00 PM - Midnight</p>
