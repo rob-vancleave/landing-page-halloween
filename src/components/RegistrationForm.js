@@ -1,31 +1,34 @@
-import React from 'react';
-import { Container, Form, Button } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function RegistrationForm() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://server.fillout.com/embed/v1/';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => document.body.removeChild(script);
+  }, []);
+
   return (
-    <Container className="py-5" id="register">
-      <h2 className="text-center mb-4">Register to Attend</h2>
-      <Form>
-        <Form.Group className="mb-3" controlId="formName">
-          <Form.Label>Name</Form.Label>
-          <Form.Control type="text" placeholder="Enter your name" />
-        </Form.Group>
+    <Row className="py-5" style={{ backgroundColor: '#2b2b2b', borderRadius: '10px' }}>
+      <Container className="justify-content-center">
+        {/* Col controls the width */}
+       
+          <h2 className="text-center mb-4" style={{ color: '#fff' }}>
+            Register to Attend
+          </h2>
+          <div
+            style={{ width: '100%', height: '500px' }}
+            data-fillout-id="25WUcH97N7us"
+            data-fillout-embed-type="standard"
+            data-fillout-inherit-parameters
+            data-fillout-dynamic-resize
+          ></div>
 
-        <Form.Group className="mb-3" controlId="formEmail">
-          <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Enter your email" />
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formMessage">
-          <Form.Label>Message (optional)</Form.Label>
-          <Form.Control as="textarea" rows={3} />
-        </Form.Group>
-
-        <Button variant="danger" type="submit">
-          Register
-        </Button>
-      </Form>
-    </Container>
+      </Container>
+    </Row>
   );
 }
 

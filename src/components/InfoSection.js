@@ -5,7 +5,7 @@ function InfoSection() {
   return (
     <Container fluid className="bg-dark text-white py-5" id="info">
       <Container>
-        <Row>
+        <Row className="background">
           <Col md={4}>
             <h4>Event Time</h4>
             <p>October 31, 2025, 7:00 PM - Midnight</p>
