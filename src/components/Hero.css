@@ -19,4 +19,13 @@
     z-index:999;
     width:100%
   }
+  .triangle {
+    height: 50vh;
+    background-image: url('https://res.cloudinary.com/dxlmumzlj/image/upload/v1755804921/nightmare-logo_qymgla.png'); 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index:999;
+    width:100%
+  }
   
