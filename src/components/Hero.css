@@ -1,6 +1,6 @@
 .hero {
     height: 100vh;
-    background-image: url('https://res.cloudinary.com/dxlmumzlj/image/upload/v1755719112/hallo-img_kjngm2.png'); /* spooky Halloween image */
+    background-image: url('https://res.cloudinary.com/dxlmumzlj/image/upload/v1755805635/grunge-bg_b5sofy.png'); /* spooky Halloween image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,8 +13,10 @@
   .hero-logo {
     height: 50vh;
     background-image: url('https://res.cloudinary.com/dxlmumzlj/image/upload/v1755804921/nightmare-logo_qymgla.png'); 
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    z-index:999;
+    width:100%
   }
   
