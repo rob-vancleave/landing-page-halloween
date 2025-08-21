@@ -12,7 +12,7 @@ function RegistrationForm() {
   }, []);
 
   return (
-    <Row className="py-5" style={{ backgroundColor: '#2b2b2b', borderRadius: '10px' }}>
+    <div className="py-5" style={{ backgroundColor: '#1a1a1a' }}>
       <Container className="justify-content-center">
         {/* Col controls the width */}
        
@@ -28,7 +28,7 @@ function RegistrationForm() {
           ></div>
 
       </Container>
-    </Row>
+    </div>
   );
 }
 
