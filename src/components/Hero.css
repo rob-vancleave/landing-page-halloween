@@ -10,4 +10,11 @@
     padding: 2rem;
     border-radius: 10px;
   }
+  .hero-logo {
+    height: 50vh;
+    background-image: url('https://res.cloudinary.com/dxlmumzlj/image/upload/v1755804921/nightmare-logo_qymgla.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   
